@@ -2,8 +2,7 @@
 import os
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import HackingTool, HackingToolsCollection
 
 
 class SlowLoris(HackingTool):

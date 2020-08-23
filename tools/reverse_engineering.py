@@ -1,8 +1,7 @@
 # coding=utf-8
 import subprocess
 
-from core import HackingTool
-from core import HackingToolsCollection
+from core import HackingTool, HackingToolsCollection
 
 
 class AndroGuard(HackingTool):

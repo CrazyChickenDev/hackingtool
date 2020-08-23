@@ -1,9 +1,9 @@
 # coding=utf-8
 import re
 
-from core import HackingTool
-from core import HackingToolsCollection
 from main import all_tools
+
+from core import HackingTool, HackingToolsCollection
 
 
 def sanitize_anchor(s):

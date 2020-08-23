@@ -4,9 +4,7 @@ import socket
 import subprocess
 import webbrowser
 
-from core import HackingTool
-from core import HackingToolsCollection
-from core import clear_screen
+from core import HackingTool, HackingToolsCollection, clear_screen
 
 
 class NMAP(HackingTool):
