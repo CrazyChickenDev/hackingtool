@@ -11,10 +11,12 @@ from core import clear_screen
 
 class NMAP(HackingTool):
     TITLE = "Network Map (nmap)"
-    DESCRIPTION = "Free and open source utility for network discovery and security auditing"
+    DESCRIPTION = (
+        "Free and open source utility for network discovery and security auditing"
+    )
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/nmap/nmap.git",
-        "sudo chmod -R 755 nmap && cd nmap && sudo ./configure && make && sudo make install"
+        "sudo chmod -R 755 nmap && cd nmap && sudo ./configure && make && sudo make install",
     ]
     PROJECT_URL = "https://github.com/nmap/nmap"
 
@@ -24,11 +26,13 @@ class NMAP(HackingTool):
 
 class Dracnmap(HackingTool):
     TITLE = "Dracnmap"
-    DESCRIPTION = "Dracnmap is an open source program which is using to \n" \
-                  "exploit the network and gathering information with nmap help."
+    DESCRIPTION = (
+        "Dracnmap is an open source program which is using to \n"
+        "exploit the network and gathering information with nmap help."
+    )
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Screetsec/Dracnmap.git",
-        "cd Dracnmap && chmod +x Dracnmap.sh"
+        "cd Dracnmap && chmod +x Dracnmap.sh",
     ]
     PROJECT_URL = "https://github.com/Screetsec/Dracnmap"
 
@@ -44,7 +48,7 @@ class PortScan(HackingTool):
 
     def run(self):
         clear_screen()
-        target = input('Select a Target IP: ')
+        target = input("Select a Target IP: ")
         subprocess.run(["sudo", "nmap", "-O", "-Pn", target])
 
 
@@ -63,11 +67,13 @@ class Host2IP(HackingTool):
 
 class XeroSploit(HackingTool):
     TITLE = "Xerosploit"
-    DESCRIPTION = "Xerosploit is a penetration testing toolkit whose goal is to perform\n" \
-                  "man-in-the-middle attacks for testing purposes"
+    DESCRIPTION = (
+        "Xerosploit is a penetration testing toolkit whose goal is to perform\n"
+        "man-in-the-middle attacks for testing purposes"
+    )
     INSTALL_COMMANDS = [
         "git clone https://github.com/LionSec/xerosploit.git",
-        "cd xerosploit && sudo python install.py"
+        "cd xerosploit && sudo python install.py",
     ]
     RUN_COMMANDS = ["sudo xerosploit"]
     PROJECT_URL = "https://github.com/LionSec/xerosploit"
@@ -75,22 +81,25 @@ class XeroSploit(HackingTool):
 
 class RedHawk(HackingTool):
     TITLE = "RED HAWK (All In One Scanning)"
-    DESCRIPTION = "All in one tool for Information Gathering and Vulnerability Scanning."
-    INSTALL_COMMANDS = [
-        "git clone https://github.com/Tuhinshubhra/RED_HAWK.git"]
+    DESCRIPTION = (
+        "All in one tool for Information Gathering and Vulnerability Scanning."
+    )
+    INSTALL_COMMANDS = ["git clone https://github.com/Tuhinshubhra/RED_HAWK.git"]
     RUN_COMMANDS = ["cd RED_HAWK;php rhawk.php"]
     PROJECT_URL = "https://github.com/Tuhinshubhra/RED_HAWK"
 
 
 class ReconSpider(HackingTool):
     TITLE = "ReconSpider(For All Scaning)"
-    DESCRIPTION = "ReconSpider is most Advanced Open Source Intelligence (OSINT)" \
-                  " Framework for scanning IP Address, Emails, \n" \
-                  "Websites, Organizations and find out information from" \
-                  " different sources.\n"
+    DESCRIPTION = (
+        "ReconSpider is most Advanced Open Source Intelligence (OSINT)"
+        " Framework for scanning IP Address, Emails, \n"
+        "Websites, Organizations and find out information from"
+        " different sources.\n"
+    )
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/bhavsec/reconspider.git",
-        "sudo apt install python3 python3-pip && cd reconspider && sudo python3 setup.py install"
+        "sudo apt install python3 python3-pip && cd reconspider && sudo python3 setup.py install",
     ]
     PROJECT_URL = "https://github.com/bhavsec/reconspider"
 
@@ -104,7 +113,8 @@ class IsItDown(HackingTool):
 
     def __init__(self):
         super(IsItDown, self).__init__(
-            [('Open', self.open)], installable=False, runnable=False)
+            [("Open", self.open)], installable=False, runnable=False
+        )
 
     def open(self):
         webbrowser.open_new_tab("https://www.isitdownrightnow.com/")
@@ -112,11 +122,13 @@ class IsItDown(HackingTool):
 
 class Infoga(HackingTool):
     TITLE = "Infoga - Email OSINT"
-    DESCRIPTION = "Infoga is a tool gathering email accounts informations\n" \
-                  "(ip, hostname, country,...) from different public source"
+    DESCRIPTION = (
+        "Infoga is a tool gathering email accounts informations\n"
+        "(ip, hostname, country,...) from different public source"
+    )
     INSTALL_COMMANDS = [
         "git clone https://github.com/m4ll0k/Infoga.git",
-        "cd infoga;sudo python setup.py install"
+        "cd infoga;sudo python setup.py install",
     ]
     RUN_COMMANDS = ["cd infoga;python infoga.py"]
     PROJECT_URL = "https://github.com/m4ll0k/Infoga"
@@ -135,7 +147,7 @@ class Striker(HackingTool):
     DESCRIPTION = "Recon & Vulnerability Scanning Suite"
     INSTALL_COMMANDS = [
         "git clone https://github.com/s0md3v/Striker.git",
-        "cd Striker && pip3 install -r requirements.txt"
+        "cd Striker && pip3 install -r requirements.txt",
     ]
     PROJECT_URL = "https://github.com/s0md3v/Striker"
 
@@ -147,13 +159,15 @@ class Striker(HackingTool):
 
 class SecretFinder(HackingTool):
     TITLE = "SecretFinder (like API & etc)"
-    DESCRIPTION = "SecretFinder - A python script for find sensitive data \n" \
-                  "like apikeys, accesstoken, authorizations, jwt,..etc \n " \
-                  "and search anything on javascript files.\n\n " \
-                  "Usage: python SecretFinder.py -h"
+    DESCRIPTION = (
+        "SecretFinder - A python script for find sensitive data \n"
+        "like apikeys, accesstoken, authorizations, jwt,..etc \n "
+        "and search anything on javascript files.\n\n "
+        "Usage: python SecretFinder.py -h"
+    )
     INSTALL_COMMANDS = [
         "git clone https://github.com/m4ll0k/SecretFinder.git secretfinder",
-        "cd secretfinder; sudo pip3 install -r requirements.txt"
+        "cd secretfinder; sudo pip3 install -r requirements.txt",
     ]
     PROJECT_URL = "https://github.com/m4ll0k/SecretFinder"
 
@@ -163,9 +177,11 @@ class SecretFinder(HackingTool):
 
 class Shodan(HackingTool):
     TITLE = "Find Info Using Shodan"
-    DESCRIPTION = "Get ports, vulnerabilities, informations, banners,..etc \n " \
-                  "for any IP with Shodan (no apikey! no rate limit!)\n" \
-                  "[X] Don't use this tool because your ip will be blocked by Shodan!"
+    DESCRIPTION = (
+        "Get ports, vulnerabilities, informations, banners,..etc \n "
+        "for any IP with Shodan (no apikey! no rate limit!)\n"
+        "[X] Don't use this tool because your ip will be blocked by Shodan!"
+    )
     INSTALL_COMMANDS = ["git clone https://github.com/m4ll0k/Shodanfy.py.git"]
     PROJECT_URL = "https://github.com/m4ll0k/Shodanfy.py"
 
@@ -175,11 +191,14 @@ class Shodan(HackingTool):
 
 class PortScannerRanger(HackingTool):
     TITLE = "Port Scanner - rang3r"
-    DESCRIPTION = "rang3r is a python script which scans in multi thread\n " \
-                  "all alive hosts within your range that you specify."
+    DESCRIPTION = (
+        "rang3r is a python script which scans in multi thread\n "
+        "all alive hosts within your range that you specify."
+    )
     INSTALL_COMMANDS = [
         "git clone https://github.com/floriankunushevci/rang3r.git;"
-        "sudo pip install termcolor"]
+        "sudo pip install termcolor"
+    ]
     PROJECT_URL = "https://github.com/floriankunushevci/rang3r"
 
     def run(self):
@@ -215,5 +234,5 @@ class InformationGatheringTools(HackingToolsCollection):
         SecretFinder(),
         Shodan(),
         PortScannerRanger(),
-        Breacher()
+        Breacher(),
     ]

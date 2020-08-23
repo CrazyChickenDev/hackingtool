@@ -59,7 +59,7 @@ all_tools = [
     XSSAttackTools(),
     SteganographyTools(),
     OtherTools(),
-    ToolManager()
+    ToolManager(),
 ]
 
 
@@ -68,21 +68,23 @@ class AllTools(HackingToolsCollection):
     TOOLS = all_tools
 
     def show_info(self):
-        print(logo + '\033[0m \033[97m')
+        print(logo + "\033[0m \033[97m")
 
 
 if __name__ == "__main__":
     try:
-        if system() == 'Linux':
+        if system() == "Linux":
             fpath = "/home/hackingtoolpath.txt"
             if not os.path.exists(fpath):
-                os.system('clear')
+                os.system("clear")
                 # run.menu()
-                print("""
+                print(
+                    """
                         [@] Set Path (All your tools will be install in that directory)
                         [1] Manual 
                         [2] Default
-                """)
+                """
+                )
                 choice = input("Z4nzu =>> ")
 
                 if choice == "1":
@@ -111,7 +113,9 @@ if __name__ == "__main__":
         # If not Linux and probably Windows
         elif system() == "Windows":
             print(
-                "\033[91m Please Run This Tool In Debian System For Best Result " "\e[00m")
+                "\033[91m Please Run This Tool In Debian System For Best Result "
+                "\e[00m"
+            )
             sleep(2)
             webbrowser.open_new_tab("https://tinyurl.com/y522modc")
 
