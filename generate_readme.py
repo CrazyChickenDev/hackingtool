@@ -16,8 +16,7 @@ def get_toc(tools, indentation=""):
     for tool in tools:
         if isinstance(tool, HackingToolsCollection):
             md += indentation + "- [{}](#{})\n".format(
-                tool.TITLE, sanitize_anchor(tool.TITLE)
-            )
+                tool.TITLE, sanitize_anchor(tool.TITLE))
             md += get_toc(tool.TOOLS, indentation=indentation + "    ")
     return md
 

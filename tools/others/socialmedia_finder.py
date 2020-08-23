@@ -8,10 +8,8 @@ from core import HackingToolsCollection
 
 class FacialFind(HackingTool):
     TITLE = "Find SocialMedia By Facial Recognation System"
-    DESCRIPTION = (
-        "A Social Media Mapping Tool that correlates profiles\n "
-        "via facial recognition across different sites."
-    )
+    DESCRIPTION = ("A Social Media Mapping Tool that correlates profiles\n "
+                   "via facial recognition across different sites.")
     INSTALL_COMMANDS = [
         "sudo add-apt-repository ppa:mozillateam/firefox-next && sudo apt update && sudo apt upgrade",
         "sudo git clone https://github.com/Greenwolf/social_mapper.git",
@@ -28,12 +26,10 @@ class FacialFind(HackingTool):
     def run(self):
         os.system("cd social_mapper/setup")
         os.system("sudo python social_mapper.py -h")
-        print(
-            """\033[95m
+        print("""\033[95m
                 You have to set Username and password of your AC Or Any Fack Account
                 [#] Type in Terminal nano social_mapper.py
-        """
-        )
+        """)
         os.system(
             'echo "python social_mapper.py -f [<imageFoldername>] -i [<imgFolderPath>] -m fast [<AcName>] -fb -tw"| boxes | lolcat'
         )
@@ -55,8 +51,7 @@ class Sherlock(HackingTool):
     DESCRIPTION = (
         "Hunt down social media accounts by username across social networks \n "
         "For More Usege \n"
-        "\t >>python3 sherlock --help"
-    )
+        "\t >>python3 sherlock --help")
     INSTALL_COMMANDS = [
         "git clone https://github.com/sherlock-project/sherlock.git",
         "cd sherlock;sudo python3 -m pip install -r requirements.txt",
@@ -71,10 +66,8 @@ class Sherlock(HackingTool):
 
 class SocialScan(HackingTool):
     TITLE = "SocialScan | Username or Email"
-    DESCRIPTION = (
-        "Check email address and username availability on online "
-        "platforms with 100% accuracy"
-    )
+    DESCRIPTION = ("Check email address and username availability on online "
+                   "platforms with 100% accuracy")
     INSTALL_COMMANDS = ["sudo pip install socialscan"]
     PROJECT_URL = "https://github.com/iojw/socialscan"
 

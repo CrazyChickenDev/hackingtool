@@ -23,9 +23,9 @@ class SteganoHide(HackingTool):
         if choice_run == 1:
             file_hide = input("Enter Filename you want to Embed (1.txt) >> ")
             file_to_be_hide = input("Enter Cover Filename(test.jpeg) >> ")
-            subprocess.run(
-                ["steghide", "embed", "-cf", file_to_be_hide, "-ef", file_hide]
-            )
+            subprocess.run([
+                "steghide", "embed", "-cf", file_to_be_hide, "-ef", file_hide
+            ])
 
         elif choice_run == "2":
             from_file = input("Enter Filename From Extract Data >> ")
@@ -34,10 +34,8 @@ class SteganoHide(HackingTool):
 
 class StegnoCracker(HackingTool):
     TITLE = "StegnoCracker"
-    DESCRIPTION = (
-        "SteganoCracker is a tool that uncover hidden data inside "
-        "files\n using brute-force utility"
-    )
+    DESCRIPTION = ("SteganoCracker is a tool that uncover hidden data inside "
+                   "files\n using brute-force utility")
     INSTALL_COMMANDS = [
         "pip3 install stegcracker && pip3 install stegcracker -U --force-reinstall"
     ]

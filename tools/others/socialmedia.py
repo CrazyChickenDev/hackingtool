@@ -19,17 +19,17 @@ class InstaBrute(HackingTool):
         name = input("Enter Username >> ")
         wordlist = input("Enter wordword list >> ")
         os.system("cd instaBrute;")
-        subprocess.run(
-            ["sudo", "python", "instaBrute.py", "-u", f"{name}", "-d", f"{wordlist}"]
-        )
+        subprocess.run([
+            "sudo", "python", "instaBrute.py", "-u", f"{name}", "-d",
+            f"{wordlist}"
+        ])
 
 
 class BruteForce(HackingTool):
     TITLE = "AllinOne SocialMedia Attack"
     DESCRIPTION = (
         "Brute_Force_Attack Gmail Hotmail Twitter Facebook Netflix \n"
-        "[!] python3 Brute_Force.py -g <Account@gmail.com> -l <File_list>"
-    )
+        "[!] python3 Brute_Force.py -g <Account@gmail.com> -l <File_list>")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Matrix07ksa/Brute_Force.git",
         "cd Brute_Force;sudo pip3 install proxylist;pip3 install mechanize",
@@ -51,9 +51,9 @@ class Faceshell(HackingTool):
         name = input("Enter Username >> ")
         wordlist = input("Enter Wordlist >> ")
         os.system("cd Brute_Force;")
-        subprocess.run(
-            ["python3", "Brute_Force.py", "-f", f"{name}", "-l", f"{wordlist}"]
-        )
+        subprocess.run([
+            "python3", "Brute_Force.py", "-f", f"{name}", "-l", f"{wordlist}"
+        ])
 
 
 class AppCheck(HackingTool):

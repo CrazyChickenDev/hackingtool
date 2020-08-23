@@ -5,11 +5,9 @@ from core import HackingToolsCollection
 
 class Stitch(HackingTool):
     TITLE = "Stitch"
-    DESCRIPTION = (
-        "Stitch is a cross platform python framework.\n"
-        "which allows you to build custom payloads\n"
-        "For Windows, Mac and Linux."
-    )
+    DESCRIPTION = ("Stitch is a cross platform python framework.\n"
+                   "which allows you to build custom payloads\n"
+                   "For Windows, Mac and Linux.")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/nathanlopez/Stitch.git",
         "cd Stitch;sudo pip install -r lnx_requirements.txt",
@@ -22,8 +20,7 @@ class Pyshell(HackingTool):
     TITLE = "Pyshell"
     DESCRIPTION = (
         "Pyshell is a Rat Tool that can be able to download & upload "
-        "files,\n Execute OS Command and more.."
-    )
+        "files,\n Execute OS Command and more..")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/khalednassar702/Pyshell.git;"
         "sudo pip install pyscreenshot python-nmap requests"

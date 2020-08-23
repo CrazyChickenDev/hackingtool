@@ -7,10 +7,8 @@ from core import HackingToolsCollection
 
 class AnonymouslySurf(HackingTool):
     TITLE = "Anonmously Surf"
-    DESCRIPTION = (
-        "It automatically overwrites the RAM when\n"
-        "the system is shutting down and also change Ip."
-    )
+    DESCRIPTION = ("It automatically overwrites the RAM when\n"
+                   "the system is shutting down and also change Ip.")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Und3rf10w/kali-anonsurf.git",
         "cd kali-anonsurf && sudo ./installer.sh && cd .. && sudo rm -r kali-anonsurf",

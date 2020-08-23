@@ -28,19 +28,17 @@ class UpdateTool(HackingTool):
         os.system("sudo apt-get install python3-pip")
 
     def update_ht(self):
-        os.system(
-            "sudo chmod +x /etc/;"
-            "sudo chmod +x /usr/share/doc;"
-            "sudo rm -rf /usr/share/doc/hackingtool/;"
-            "cd /etc/;"
-            "sudo rm -rf /etc/hackingtool/;"
-            "mkdir hackingtool;"
-            "cd hackingtool;"
-            "git clone https://github.com/Z4nzu/hackingtool.git;"
-            "cd hackingtool;"
-            "sudo chmod +x install.sh;"
-            "./install.sh"
-        )
+        os.system("sudo chmod +x /etc/;"
+                  "sudo chmod +x /usr/share/doc;"
+                  "sudo rm -rf /usr/share/doc/hackingtool/;"
+                  "cd /etc/;"
+                  "sudo rm -rf /etc/hackingtool/;"
+                  "mkdir hackingtool;"
+                  "cd hackingtool;"
+                  "git clone https://github.com/Z4nzu/hackingtool.git;"
+                  "cd hackingtool;"
+                  "sudo chmod +x install.sh;"
+                  "./install.sh")
 
 
 class UninstallTool(HackingTool):
@@ -48,20 +46,18 @@ class UninstallTool(HackingTool):
     DESCRIPTION = "Uninstall HackingTool"
 
     def __init__(self):
-        super(UninstallTool, self).__init__(
-            [("Uninstall", self.uninstall)], installable=False, runnable=False
-        )
+        super(UninstallTool, self).__init__([("Uninstall", self.uninstall)],
+                                            installable=False,
+                                            runnable=False)
 
     def uninstall(self):
         print("hackingtool started to uninstall..\n")
         sleep(1)
-        os.system(
-            "sudo chmod +x /etc/;"
-            "sudo chmod +x /usr/share/doc;"
-            "sudo rm -rf /usr/share/doc/hackingtool/;"
-            "cd /etc/;"
-            "sudo rm -rf /etc/hackingtool/;"
-        )
+        os.system("sudo chmod +x /etc/;"
+                  "sudo chmod +x /usr/share/doc;"
+                  "sudo rm -rf /usr/share/doc/hackingtool/;"
+                  "cd /etc/;"
+                  "sudo rm -rf /etc/hackingtool/;")
         print("\nHackingtool Successfully Uninstalled..")
         print("Happy Hacking..!!")
         sleep(1)

@@ -8,10 +8,8 @@ from core import HackingToolsCollection
 
 class SlowLoris(HackingTool):
     TITLE = "SlowLoris"
-    DESCRIPTION = (
-        "Slowloris is basically an HTTP Denial of Service attack."
-        "It send lots of HTTP Request"
-    )
+    DESCRIPTION = ("Slowloris is basically an HTTP Denial of Service attack."
+                   "It send lots of HTTP Request")
     INSTALL_COMMANDS = ["sudo pip install slowloris"]
 
     def run(self):
@@ -21,11 +19,9 @@ class SlowLoris(HackingTool):
 
 class Asyncrone(HackingTool):
     TITLE = "Asyncrone | Multifunction SYN Flood DDoS Weapon"
-    DESCRIPTION = (
-        "aSYNcrone is a C language based, mulltifunction SYN Flood "
-        "DDoS Weapon.\nDisable the destination system by sending a "
-        "SYN packet intensively to the destination."
-    )
+    DESCRIPTION = ("aSYNcrone is a C language based, mulltifunction SYN Flood "
+                   "DDoS Weapon.\nDisable the destination system by sending a "
+                   "SYN packet intensively to the destination.")
     INSTALL_COMMANDS = [
         "git clone https://github.com/fatih4842/aSYNcrone.git",
         "cd aSYNcrone;sudo gcc aSYNcrone.c -o aSYNcrone -lpthread",
@@ -38,18 +34,15 @@ class Asyncrone(HackingTool):
         target_port = input("Enter Target port >> ")
         os.system("cd aSYNcrone;")
         subprocess.run(
-            ["sudo", "./aSYNcrone", source_port, target_ip, target_port, 1000]
-        )
+            ["sudo", "./aSYNcrone", source_port, target_ip, target_port, 1000])
 
 
 class UFONet(HackingTool):
     TITLE = "UFOnet"
-    DESCRIPTION = (
-        "UFONet - is a free software, P2P and cryptographic "
-        "-disruptive \n toolkit- that allows to perform DoS and "
-        "DDoS attacks\n\b "
-        "More Usage Visit"
-    )
+    DESCRIPTION = ("UFONet - is a free software, P2P and cryptographic "
+                   "-disruptive \n toolkit- that allows to perform DoS and "
+                   "DDoS attacks\n\b "
+                   "More Usage Visit")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/epsylon/ufonet.git",
         "cd ufonet;sudo python setup.py install",
@@ -62,8 +55,7 @@ class GoldenEye(HackingTool):
     TITLE = "GoldenEye"
     DESCRIPTION = (
         "GoldenEye is an python3 app for SECURITY TESTING PURPOSES ONLY!\n"
-        "GoldenEye is a HTTP DoS Test Tool."
-    )
+        "GoldenEye is a HTTP DoS Test Tool.")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/jseidl/GoldenEye.git;"
         "chmod -R 755 GoldenEye"
@@ -72,9 +64,8 @@ class GoldenEye(HackingTool):
 
     def run(self):
         os.system("cd GoldenEye ;sudo ./goldeneye.py")
-        print(
-            "\033[96m Go to Directory \n " "[*] USAGE: ./goldeneye.py <url> [OPTIONS]"
-        )
+        print("\033[96m Go to Directory \n "
+              "[*] USAGE: ./goldeneye.py <url> [OPTIONS]")
 
 
 class DDOSTools(HackingToolsCollection):

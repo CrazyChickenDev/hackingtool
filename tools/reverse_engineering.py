@@ -7,10 +7,8 @@ from core import HackingToolsCollection
 
 class AndroGuard(HackingTool):
     TITLE = "Androguard"
-    DESCRIPTION = (
-        "Androguard is a Reverse engineering, Malware and goodware "
-        "analysis of Android applications and more"
-    )
+    DESCRIPTION = ("Androguard is a Reverse engineering, Malware and goodware "
+                   "analysis of Android applications and more")
     INSTALL_COMMANDS = ["sudo pip install -U androguard"]
     PROJECT_URL = "https://github.com/androguard/androguard "
 
@@ -39,8 +37,7 @@ class Jadx(HackingTool):
         "[*] decompile Dalvik bytecode to java classes from APK, dex,"
         " aar and zip files\n"
         "[*] decode AndroidManifest.xml and other resources from "
-        "resources.arsc"
-    )
+        "resources.arsc")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/skylot/jadx.git",
         "cd jadx;./gradlew dist",

@@ -9,8 +9,7 @@ class Setoolkit(HackingTool):
     TITLE = "Setoolkit"
     DESCRIPTION = (
         "The Social-Engineer Toolkit is an open-source penetration\n"
-        "testing framework designed for social engineering"
-    )
+        "testing framework designed for social engineering")
     INSTALL_COMMANDS = [
         "git clone https://github.com/trustedsec/social-engineer-toolkit.git",
         "sudo python social-engineer-toolkit/setup.py",
@@ -32,11 +31,9 @@ class SocialFish(HackingTool):
 
 class HiddenEye(HackingTool):
     TITLE = "HiddenEye"
-    DESCRIPTION = (
-        "Modern Phishing Tool With Advanced Functionality And "
-        "Multiple Tunnelling Services \n"
-        "\t [!]https://github.com/DarkSecDevelopers/HiddenEye"
-    )
+    DESCRIPTION = ("Modern Phishing Tool With Advanced Functionality And "
+                   "Multiple Tunnelling Services \n"
+                   "\t [!]https://github.com/DarkSecDevelopers/HiddenEye")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/DarkSecDevelopers/HiddenEye.git ;sudo chmod 777 HiddenEye",
         "cd HiddenEye;sudo pip3 install -r requirements.txt;sudo pip3 install requests;pip3 install pyngrok",
@@ -55,8 +52,7 @@ class Evilginx2(HackingTool):
         "[+]After installation, add this to your ~/.profile, assuming that you installed GO in /usr/local/go\n\t "
         "[+]export GOPATH=$HOME/go \n "
         "[+]export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin \n"
-        "[+]Then load it with source ~/.profiles."
-    )
+        "[+]Then load it with source ~/.profiles.")
     INSTALL_COMMANDS = [
         "sudo apt-get install git make;go get -u github.com/kgretzky/evilginx2",
         "cd $GOPATH/src/github.com/kgretzky/evilginx2;make",
@@ -72,8 +68,7 @@ class ISeeYou(HackingTool):
         "[!] ISeeYou is a tool to find Exact Location of Victom By"
         " User SocialEngineering or Phishing Engagment..\n"
         "[!] Users can expose their local servers to the Internet "
-        "and decode the location coordinates by looking at the log file"
-    )
+        "and decode the location coordinates by looking at the log file")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Viralmaniar/I-See-You.git",
         "cd I-See-You && sudo chmod u+x ISeeYou.sh",
@@ -85,7 +80,9 @@ class ISeeYou(HackingTool):
 class SayCheese(HackingTool):
     TITLE = "SayCheese (Grab target's Webcam Shots)"
     DESCRIPTION = "Take webcam shots from target just sending a malicious link"
-    INSTALL_COMMANDS = ["sudo git clone https://github.com/hangetzzu/saycheese"]
+    INSTALL_COMMANDS = [
+        "sudo git clone https://github.com/hangetzzu/saycheese"
+    ]
     RUN_COMMANDS = ["cd saycheese && sudo bash saycheese.sh"]
     PROJECT_URL = "https://github.com/hangetzzu/saycheese"
 

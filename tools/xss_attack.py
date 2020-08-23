@@ -35,28 +35,26 @@ class XSSPayloadGenerator(HackingTool):
 class XSSFinder(HackingTool):
     TITLE = "Extended XSS Searcher and Finder"
     DESCRIPTION = "Extended XSS Searcher and Finder"
-    INSTALL_COMMANDS = ["git glone https://github.com/Damian89/extended-xss-search.git"]
+    INSTALL_COMMANDS = [
+        "git glone https://github.com/Damian89/extended-xss-search.git"
+    ]
     PROJECT_URL = "https://github.com/Damian89/extended-xss-search"
 
     def after_install(self):
-        print(
-            """\033[96m
+        print("""\033[96m
         Follow This Steps After Installation:-
             \033[31m [*] Go To extended-xss-search directory,
                 and Rename the example.app-settings.conf to app-settings.conf
-        """
-        )
+        """)
         input("Press ENTER to continue")
 
     def run(self):
-        print(
-            """\033[96m
+        print("""\033[96m
         You have To Add Links to scan
         \033[31m[!] Go to extended-xss-search
             [*] config/urls-to-test.txt
             [!] python3 extended-xss-search.py
-        """
-        )
+        """)
 
 
 class XSSFreak(HackingTool):
@@ -94,19 +92,15 @@ class XSSCon(HackingTool):
 
 class XanXSS(HackingTool):
     TITLE = "XanXSS"
-    DESCRIPTION = (
-        "XanXSS is a reflected XSS searching tool\n "
-        "that creates payloads based from templates"
-    )
+    DESCRIPTION = ("XanXSS is a reflected XSS searching tool\n "
+                   "that creates payloads based from templates")
     INSTALL_COMMANDS = ["git clone https://github.com/Ekultek/XanXSS.git"]
     PROJECT_URL = "https://github.com/Ekultek/XanXSS"
 
     def run(self):
         os.system("cd XanXSS ;python xanxss.py -h")
-        print(
-            "\033[96m You Have to run it manually By Using\n"
-            " [!]python xanxss.py [Options]"
-        )
+        print("\033[96m You Have to run it manually By Using\n"
+              " [!]python xanxss.py [Options]")
 
 
 class XSSStrike(HackingTool):
@@ -127,10 +121,8 @@ class XSSStrike(HackingTool):
 
 class RVuln(HackingTool):
     TITLE = "RVuln"
-    DESCRIPTION = (
-        "RVuln is multi-threaded and Automated Web Vulnerability "
-        "Scanner written in Rust"
-    )
+    DESCRIPTION = ("RVuln is multi-threaded and Automated Web Vulnerability "
+                   "Scanner written in Rust")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/iinc0gnit0/RVuln.git;"
         "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh;"

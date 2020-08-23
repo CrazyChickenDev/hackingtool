@@ -18,12 +18,12 @@ class Cupp(HackingTool):
 
 class WlCreator(HackingTool):
     TITLE = "WordlistCreator"
-    DESCRIPTION = (
-        "WlCreator is a C program that can create all possibilities"
-        " of passwords,\n and you can choose Lenght, Lowercase, "
-        "Capital, Numbers and Special Chars"
-    )
-    INSTALL_COMMANDS = ["sudo git clone https://github.com/Z4nzu/wlcreator.git"]
+    DESCRIPTION = ("WlCreator is a C program that can create all possibilities"
+                   " of passwords,\n and you can choose Lenght, Lowercase, "
+                   "Capital, Numbers and Special Chars")
+    INSTALL_COMMANDS = [
+        "sudo git clone https://github.com/Z4nzu/wlcreator.git"
+    ]
     RUN_COMMANDS = [
         "cd wlcreator && sudo gcc -o wlcreator wlcreator.c && ./wlcreator 5"
     ]
@@ -47,8 +47,7 @@ class showme(HackingTool):
         "an organisation or an individual. It allows one to search "
         "1.4 Billion clear text credentials which was dumped as "
         "part of BreachCompilation leak. This database makes "
-        "finding passwords faster and easier than ever before."
-    )
+        "finding passwords faster and easier than ever before.")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Viralmaniar/SMWYG-Show-Me-What-You-Got.git",
         "cd SMWYG-Show-Me-What-You-Got && pip3 install -r requirements.txt",

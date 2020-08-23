@@ -28,8 +28,7 @@ class Dracnmap(HackingTool):
     TITLE = "Dracnmap"
     DESCRIPTION = (
         "Dracnmap is an open source program which is using to \n"
-        "exploit the network and gathering information with nmap help."
-    )
+        "exploit the network and gathering information with nmap help.")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/Screetsec/Dracnmap.git",
         "cd Dracnmap && chmod +x Dracnmap.sh",
@@ -69,8 +68,7 @@ class XeroSploit(HackingTool):
     TITLE = "Xerosploit"
     DESCRIPTION = (
         "Xerosploit is a penetration testing toolkit whose goal is to perform\n"
-        "man-in-the-middle attacks for testing purposes"
-    )
+        "man-in-the-middle attacks for testing purposes")
     INSTALL_COMMANDS = [
         "git clone https://github.com/LionSec/xerosploit.git",
         "cd xerosploit && sudo python install.py",
@@ -84,7 +82,9 @@ class RedHawk(HackingTool):
     DESCRIPTION = (
         "All in one tool for Information Gathering and Vulnerability Scanning."
     )
-    INSTALL_COMMANDS = ["git clone https://github.com/Tuhinshubhra/RED_HAWK.git"]
+    INSTALL_COMMANDS = [
+        "git clone https://github.com/Tuhinshubhra/RED_HAWK.git"
+    ]
     RUN_COMMANDS = ["cd RED_HAWK;php rhawk.php"]
     PROJECT_URL = "https://github.com/Tuhinshubhra/RED_HAWK"
 
@@ -95,8 +95,7 @@ class ReconSpider(HackingTool):
         "ReconSpider is most Advanced Open Source Intelligence (OSINT)"
         " Framework for scanning IP Address, Emails, \n"
         "Websites, Organizations and find out information from"
-        " different sources.\n"
-    )
+        " different sources.\n")
     INSTALL_COMMANDS = [
         "sudo git clone https://github.com/bhavsec/reconspider.git",
         "sudo apt install python3 python3-pip && cd reconspider && sudo python3 setup.py install",
@@ -112,9 +111,9 @@ class IsItDown(HackingTool):
     DESCRIPTION = "Check Website Is Online or Not"
 
     def __init__(self):
-        super(IsItDown, self).__init__(
-            [("Open", self.open)], installable=False, runnable=False
-        )
+        super(IsItDown, self).__init__([("Open", self.open)],
+                                       installable=False,
+                                       runnable=False)
 
     def open(self):
         webbrowser.open_new_tab("https://www.isitdownrightnow.com/")
@@ -122,10 +121,8 @@ class IsItDown(HackingTool):
 
 class Infoga(HackingTool):
     TITLE = "Infoga - Email OSINT"
-    DESCRIPTION = (
-        "Infoga is a tool gathering email accounts informations\n"
-        "(ip, hostname, country,...) from different public source"
-    )
+    DESCRIPTION = ("Infoga is a tool gathering email accounts informations\n"
+                   "(ip, hostname, country,...) from different public source")
     INSTALL_COMMANDS = [
         "git clone https://github.com/m4ll0k/Infoga.git",
         "cd infoga;sudo python setup.py install",
@@ -159,12 +156,10 @@ class Striker(HackingTool):
 
 class SecretFinder(HackingTool):
     TITLE = "SecretFinder (like API & etc)"
-    DESCRIPTION = (
-        "SecretFinder - A python script for find sensitive data \n"
-        "like apikeys, accesstoken, authorizations, jwt,..etc \n "
-        "and search anything on javascript files.\n\n "
-        "Usage: python SecretFinder.py -h"
-    )
+    DESCRIPTION = ("SecretFinder - A python script for find sensitive data \n"
+                   "like apikeys, accesstoken, authorizations, jwt,..etc \n "
+                   "and search anything on javascript files.\n\n "
+                   "Usage: python SecretFinder.py -h")
     INSTALL_COMMANDS = [
         "git clone https://github.com/m4ll0k/SecretFinder.git secretfinder",
         "cd secretfinder; sudo pip3 install -r requirements.txt",
@@ -180,8 +175,7 @@ class Shodan(HackingTool):
     DESCRIPTION = (
         "Get ports, vulnerabilities, informations, banners,..etc \n "
         "for any IP with Shodan (no apikey! no rate limit!)\n"
-        "[X] Don't use this tool because your ip will be blocked by Shodan!"
-    )
+        "[X] Don't use this tool because your ip will be blocked by Shodan!")
     INSTALL_COMMANDS = ["git clone https://github.com/m4ll0k/Shodanfy.py.git"]
     PROJECT_URL = "https://github.com/m4ll0k/Shodanfy.py"
 
@@ -191,10 +185,8 @@ class Shodan(HackingTool):
 
 class PortScannerRanger(HackingTool):
     TITLE = "Port Scanner - rang3r"
-    DESCRIPTION = (
-        "rang3r is a python script which scans in multi thread\n "
-        "all alive hosts within your range that you specify."
-    )
+    DESCRIPTION = ("rang3r is a python script which scans in multi thread\n "
+                   "all alive hosts within your range that you specify.")
     INSTALL_COMMANDS = [
         "git clone https://github.com/floriankunushevci/rang3r.git;"
         "sudo pip install termcolor"
