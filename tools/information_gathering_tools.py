@@ -19,7 +19,7 @@ class NMAP(HackingTool):
     PROJECT_URL = "https://github.com/nmap/nmap"
 
     def __init__(self):
-        super(NMAP, self).__init__(runnable = False)
+        super(NMAP, self).__init__(runnable=False)
 
 
 class Dracnmap(HackingTool):
@@ -33,14 +33,14 @@ class Dracnmap(HackingTool):
     PROJECT_URL = "https://github.com/Screetsec/Dracnmap"
 
     def __init__(self):
-        super(Dracnmap, self).__init__(runnable = False)
+        super(Dracnmap, self).__init__(runnable=False)
 
 
 class PortScan(HackingTool):
     TITLE = "Port scanning"
 
     def __init__(self):
-        super(PortScan, self).__init__(installable = False)
+        super(PortScan, self).__init__(installable=False)
 
     def run(self):
         clear_screen()
@@ -52,7 +52,7 @@ class Host2IP(HackingTool):
     TITLE = "Host to IP "
 
     def __init__(self):
-        super(Host2IP, self).__init__(installable = False)
+        super(Host2IP, self).__init__(installable=False)
 
     def run(self):
         clear_screen()
@@ -95,7 +95,7 @@ class ReconSpider(HackingTool):
     PROJECT_URL = "https://github.com/bhavsec/reconspider"
 
     def __init__(self):
-        super(ReconSpider, self).__init__(runnable = False)
+        super(ReconSpider, self).__init__(runnable=False)
 
 
 class IsItDown(HackingTool):
@@ -104,7 +104,7 @@ class IsItDown(HackingTool):
 
     def __init__(self):
         super(IsItDown, self).__init__(
-            [('Open', self.open)], installable = False, runnable = False)
+            [('Open', self.open)], installable=False, runnable=False)
 
     def open(self):
         webbrowser.open_new_tab("https://www.isitdownrightnow.com/")
@@ -158,7 +158,7 @@ class SecretFinder(HackingTool):
     PROJECT_URL = "https://github.com/m4ll0k/SecretFinder"
 
     def __init__(self):
-        super(SecretFinder, self).__init__(runnable = False)
+        super(SecretFinder, self).__init__(runnable=False)
 
 
 class Shodan(HackingTool):
@@ -170,7 +170,7 @@ class Shodan(HackingTool):
     PROJECT_URL = "https://github.com/m4ll0k/Shodanfy.py"
 
     def __init__(self):
-        super(Shodan, self).__init__(runnable = False)
+        super(Shodan, self).__init__(runnable=False)
 
 
 class PortScannerRanger(HackingTool):
@@ -195,7 +195,7 @@ class Breacher(HackingTool):
     PROJECT_URL = "https://github.com/s0md3v/Breacher"
 
     def __init__(self):
-        super(Breacher, self).__init__(runnable = False)
+        super(Breacher, self).__init__(runnable=False)
 
 
 class InformationGatheringTools(HackingToolsCollection):

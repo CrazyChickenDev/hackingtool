@@ -14,7 +14,7 @@ class Autopsy(HackingTool):
     RUN_COMMANDS = "sudo autopsy"
 
     def __init__(self):
-        super(Autopsy, self).__init__(installable = False)
+        super(Autopsy, self).__init__(installable=False)
 
 
 class Wireshark(HackingTool):
@@ -25,7 +25,7 @@ class Wireshark(HackingTool):
     RUN_COMMANDS = ["sudo wireshark"]
 
     def __init__(self):
-        super(Wireshark, self).__init__(installable = False)
+        super(Wireshark, self).__init__(installable=False)
 
 
 class BulkExtractor(HackingTool):
@@ -37,7 +37,7 @@ class BulkExtractor(HackingTool):
         super(BulkExtractor, self).__init__([
             ('GUI Mode (Download required)', self.gui_mode),
             ('CLI Mode', self.cli_mode)
-        ], installable = False, runnable = False)
+        ], installable=False, runnable=False)
 
     def gui_mode(self):
         os.system(
@@ -77,7 +77,7 @@ class Toolsley(HackingTool):
     PROJECT_URL = "https://www.toolsley.com/"
 
     def __init__(self):
-        super(Toolsley, self).__init__(installable = False, runnable = False)
+        super(Toolsley, self).__init__(installable=False, runnable=False)
 
 
 class ForensicTools(HackingToolsCollection):

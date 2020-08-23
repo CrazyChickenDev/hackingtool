@@ -16,7 +16,7 @@ class Sqlmap(HackingTool):
     PROJECT_URL = "https://github.com/sqlmapproject/sqlmap"
 
     def __init__(self):
-        super(Sqlmap, self).__init__(runnable = False)
+        super(Sqlmap, self).__init__(runnable=False)
 
 
 class NoSqlMap(HackingTool):
@@ -43,7 +43,7 @@ class SQLiScanner(HackingTool):
     PROJECT_URL = "https://github.com/stamparm/DSSS"
 
     def __init__(self):
-        super(SQLiScanner, self).__init__(runnable = False)
+        super(SQLiScanner, self).__init__(runnable=False)
 
 
 class Explo(HackingTool):
@@ -60,7 +60,7 @@ class Explo(HackingTool):
     PROJECT_URL = "https://github.com/dtag-dev-sec/explo"
 
     def __init__(self):
-        super(Explo, self).__init__(runnable = False)
+        super(Explo, self).__init__(runnable=False)
 
 
 class Blisqy(HackingTool):
@@ -73,7 +73,7 @@ class Blisqy(HackingTool):
     PROJECT_URL = "https://github.com/JohnTroony/Blisqy"
 
     def __init__(self):
-        super(Blisqy, self).__init__(runnable = False)
+        super(Blisqy, self).__init__(runnable=False)
 
 
 class Leviathan(HackingTool):

@@ -25,7 +25,7 @@ class Skipfish(HackingTool):
     ]
 
     def __init__(self):
-        super(Skipfish, self).__init__(installable = False)
+        super(Skipfish, self).__init__(installable=False)
 
 
 class SubDomainFinder(HackingTool):
@@ -79,7 +79,7 @@ class SubDomainTakeOver(HackingTool):
     PROJECT_URL = "https://github.com/m4ll0k/takeover"
 
     def __init__(self):
-        super(SubDomainTakeOver, self).__init__(runnable = False)
+        super(SubDomainTakeOver, self).__init__(runnable=False)
 
 
 class Dirb(HackingTool):

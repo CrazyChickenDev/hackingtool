@@ -26,7 +26,7 @@ class Pixload(HackingTool):
         # super(Pixload, self).__init__([
         #     ('How To Use', self.show_project_page)
         # ], runnable = False)
-        super(Pixload, self).__init__(runnable = False)
+        super(Pixload, self).__init__(runnable=False)
 
 
 class PayloadInjectorTools(HackingToolsCollection):

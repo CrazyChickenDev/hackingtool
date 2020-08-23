@@ -77,7 +77,8 @@ class ISeeYou(HackingTool):
 class SayCheese(HackingTool):
     TITLE = "SayCheese (Grab target's Webcam Shots)"
     DESCRIPTION = "Take webcam shots from target just sending a malicious link"
-    INSTALL_COMMANDS = ["sudo git clone https://github.com/hangetzzu/saycheese"]
+    INSTALL_COMMANDS = [
+        "sudo git clone https://github.com/hangetzzu/saycheese"]
     RUN_COMMANDS = ["cd saycheese && sudo bash saycheese.sh"]
     PROJECT_URL = "https://github.com/hangetzzu/saycheese"
 

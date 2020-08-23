@@ -113,7 +113,7 @@ class XSSStrike(HackingTool):
     PROJECT_URL = "https://github.com/UltimateHackers/XSStrike"
 
     def __init__(self):
-        super(XSSStrike, self).__init__(runnable = False)
+        super(XSSStrike, self).__init__(runnable=False)
 
 
 class RVuln(HackingTool):

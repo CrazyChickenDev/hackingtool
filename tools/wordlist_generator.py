@@ -11,7 +11,7 @@ class Cupp(HackingTool):
     PROJECT_URL = "https://github.com/Mebus/cupp.git"
 
     def __init__(self):
-        super(Cupp, self).__init__(runnable = False)
+        super(Cupp, self).__init__(runnable=False)
 
 
 class WlCreator(HackingTool):
@@ -19,7 +19,8 @@ class WlCreator(HackingTool):
     DESCRIPTION = "WlCreator is a C program that can create all possibilities" \
                   " of passwords,\n and you can choose Lenght, Lowercase, " \
                   "Capital, Numbers and Special Chars"
-    INSTALL_COMMANDS = ["sudo git clone https://github.com/Z4nzu/wlcreator.git"]
+    INSTALL_COMMANDS = [
+        "sudo git clone https://github.com/Z4nzu/wlcreator.git"]
     RUN_COMMANDS = [
         "cd wlcreator && sudo gcc -o wlcreator wlcreator.c && ./wlcreator 5"]
     PROJECT_URL = "https://github.com/Z4nzu/wlcreator"

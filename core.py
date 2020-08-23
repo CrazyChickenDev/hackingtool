@@ -44,7 +44,7 @@ class HackingTool(object):
 
     PROJECT_URL: str = ""
 
-    def __init__(self, options = None, installable: bool = True,
+    def __init__(self, options=None, installable: bool = True,
                  runnable: bool = True):
         if options is None:
             options = []
@@ -67,7 +67,7 @@ class HackingTool(object):
         os.system(f'echo "{desc}"|boxes -d boy | lolcat')
         # print(desc)
 
-    def show_options(self, parent = None):
+    def show_options(self, parent=None):
         clear_screen()
         self.show_info()
         for index, option in enumerate(self.OPTIONS):
@@ -95,7 +95,7 @@ class HackingTool(object):
         except Exception:
             print_exc()
             input("\n\nPress ENTER to continue:")
-        return self.show_options(parent = parent)
+        return self.show_options(parent=parent)
 
     def before_install(self):
         pass
@@ -137,7 +137,7 @@ class HackingTool(object):
     def after_run(self):
         pass
 
-    def is_installed(self, dir_to_check = None):
+    def is_installed(self, dir_to_check=None):
         print("Unimplemented: DO NOT USE")
         return "?"
 
@@ -158,7 +158,7 @@ class HackingToolsCollection(object):
         # os.system(f'echo "{self.DESCRIPTION}"|boxes -d boy | lolcat')
         # print(self.DESCRIPTION)
 
-    def show_options(self, parent = None):
+    def show_options(self, parent=None):
         clear_screen()
         self.show_info()
         for index, tool in enumerate(self.TOOLS):
@@ -169,7 +169,7 @@ class HackingToolsCollection(object):
         try:
             tool_index = int(tool_index)
             if tool_index in range(len(self.TOOLS)):
-                ret_code = self.TOOLS[tool_index].show_options(parent = self)
+                ret_code = self.TOOLS[tool_index].show_options(parent=self)
                 if ret_code != 99:
                     input("\n\nPress ENTER to continue:")
             elif tool_index == 99:
@@ -182,4 +182,4 @@ class HackingToolsCollection(object):
         except Exception as e:
             print_exc()
             input("\n\nPress ENTER to continue:")
-        return self.show_options(parent = parent)
+        return self.show_options(parent=parent)

@@ -14,7 +14,7 @@ class UpdateTool(HackingTool):
         super(UpdateTool, self).__init__([
             ("Update System", self.update_sys),
             ("Update Hackingtool", self.update_ht)
-        ], installable = False, runnable = False)
+        ], installable=False, runnable=False)
 
     def update_sys(self):
         os.system("sudo apt update && sudo apt full-upgrade -y")
@@ -43,7 +43,7 @@ class UninstallTool(HackingTool):
     def __init__(self):
         super(UninstallTool, self).__init__([
             ('Uninstall', self.uninstall)
-        ], installable = False, runnable = False)
+        ], installable=False, runnable=False)
 
     def uninstall(self):
         print("hackingtool started to uninstall..\n")

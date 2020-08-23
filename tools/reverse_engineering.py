@@ -13,7 +13,7 @@ class AndroGuard(HackingTool):
     PROJECT_URL = "https://github.com/androguard/androguard "
 
     def __init__(self):
-        super(AndroGuard, self).__init__(runnable = False)
+        super(AndroGuard, self).__init__(runnable=False)
 
 
 class Apk2Gold(HackingTool):
@@ -44,7 +44,7 @@ class Jadx(HackingTool):
     PROJECT_URL = "https://github.com/skylot/jadx"
 
     def __init__(self):
-        super(Jadx, self).__init__(runnable = False)
+        super(Jadx, self).__init__(runnable=False)
 
 
 class ReverseEngineeringTools(HackingToolsCollection):
