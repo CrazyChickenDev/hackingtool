@@ -40,7 +40,7 @@ class XSSFinder(HackingTool):
 
     def after_install(self):
         print(
-            """\033[96m 
+            """\033[96m
         Follow This Steps After Installation:-
             \033[31m [*] Go To extended-xss-search directory,
                 and Rename the example.app-settings.conf to app-settings.conf
@@ -50,7 +50,7 @@ class XSSFinder(HackingTool):
 
     def run(self):
         print(
-            """\033[96m 
+            """\033[96m
         You have To Add Links to scan
         \033[31m[!] Go to extended-xss-search
             [*] config/urls-to-test.txt

@@ -53,9 +53,9 @@ class Brutal(HackingTool):
             >> TeensyDuino
             >> Linux udev rules
             >> Copy and paste the PaensyLib folder inside your Arduino\libraries
-    
-        [!] Kindly Visit below link for Installation for Arduino 
-            >> https://github.com/Screetsec/Brutal/wiki/Install-Requirements 
+
+        [!] Kindly Visit below link for Installation for Arduino
+            >> https://github.com/Screetsec/Brutal/wiki/Install-Requirements
         """
         )
 

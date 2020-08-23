@@ -29,7 +29,7 @@ class FacialFind(HackingTool):
         os.system("cd social_mapper/setup")
         os.system("sudo python social_mapper.py -h")
         print(
-            """\033[95m 
+            """\033[95m
                 You have to set Username and password of your AC Or Any Fack Account
                 [#] Type in Terminal nano social_mapper.py
         """
