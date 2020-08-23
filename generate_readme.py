@@ -3,7 +3,8 @@ import re
 
 from main import all_tools
 
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 
 
 def sanitize_anchor(s):

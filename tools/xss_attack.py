@@ -2,7 +2,8 @@
 import os
 import subprocess
 
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 
 
 class Dalfox(HackingTool):

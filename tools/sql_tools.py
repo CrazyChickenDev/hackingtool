@@ -1,5 +1,6 @@
 # coding=utf-8
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 
 
 class Sqlmap(HackingTool):

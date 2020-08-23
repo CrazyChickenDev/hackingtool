@@ -1,7 +1,9 @@
 # coding=utf-8
 import subprocess
 
-from core import HackingTool, HackingToolsCollection, validate_input
+from core import HackingTool
+from core import HackingToolsCollection
+from core import validate_input
 
 
 class SteganoHide(HackingTool):

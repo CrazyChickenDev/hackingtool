@@ -4,7 +4,10 @@ import sys
 import webbrowser
 from platform import system
 from traceback import print_exc
-from typing import Any, Callable, List, Tuple
+from typing import Any
+from typing import Callable
+from typing import List
+from typing import Tuple
 
 
 def clear_screen():

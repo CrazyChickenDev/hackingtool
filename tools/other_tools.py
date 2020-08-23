@@ -2,7 +2,8 @@
 import os
 import subprocess
 
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 from tools.others.android_attack import AndroidAttackTools
 from tools.others.email_verifier import EmailVerifyTools
 from tools.others.hash_crack import HashCrackingTools

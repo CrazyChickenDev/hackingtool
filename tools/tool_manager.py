@@ -2,7 +2,8 @@
 import os
 from time import sleep
 
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 
 
 class UpdateTool(HackingTool):

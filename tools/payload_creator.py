@@ -1,7 +1,8 @@
 # coding=utf-8
 import os
 
-from core import HackingTool, HackingToolsCollection
+from core import HackingTool
+from core import HackingToolsCollection
 
 
 class TheFatRat(HackingTool):
